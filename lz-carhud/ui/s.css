@@ -1,0 +1,87 @@
+@font-face {
+    font-family: LZ;
+    src: url(bankgothic.ttf);
+}
+
+* {
+    font-family: LZ;
+    user-select: none;
+    color: white;
+}
+
+.container {
+    position: absolute;
+    height: 6.5vw;
+    width: 11.5vw;
+    background-color: #000;
+    border-radius: .3vw;
+    box-shadow: 0 0 .5vw #000, 0 0 .5vw #000, 0 0 .5vw #000, 0 0 .5vw #000;
+    left: 40.9vw;
+    bottom: 3.5vw;
+}
+
+.velocidad {
+    position: absolute;
+    font-size: 1.35vw;
+    text-shadow: 0 0 .3vw #fff;
+    left: 5.4vw;
+    top: .2vw;
+    text-align: center;
+}
+
+.kmh-text {
+    position: absolute;
+    font-size: .83vw;
+    right: .8vw;
+    top: 1vw;
+}
+
+.barra-separadora {
+    position: absolute;
+    width: 10vw;
+    height: .2vw;
+    top: 2.8vw;
+    left: .6vw;
+    background-color: white;
+    box-shadow: 0 0 .3vw #fff, 0 0 .3vw #fff, 0 0 .3vw #fff;
+    border-radius: 1vw;
+}
+
+.fuel-l {
+    position: absolute;
+    font-size: .9vw;
+    bottom: .2vw;
+    left: .2vw;
+    text-align: center;
+}
+
+#vel-ico {
+    position: absolute;
+    font-size: 1.2vw;
+    bottom: .3vw;
+    right: .3vw;
+}
+
+#seat-belt {
+    position: absolute;
+    width: 1.5vw;
+    bottom: .2vw;
+    left: 5vw;
+}
+
+.progresskmh {
+    position: absolute;
+    width: 10vw;
+    height: 1vw;
+    bottom: 1vw;
+    left: 41.5vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 .3vw #000, 0 0 .3vw #000, 0 0 .3vw #000;
+    border-radius: .1vw;
+}
+
+.progressBarKmh {
+    background-color: #000;
+    max-width: 10vw;
+    height: 100%;
+}
