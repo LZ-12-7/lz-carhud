@@ -19,6 +19,12 @@ CreateThread(function()
                 action = "outVeh";
             })
         end
+            
+        if IsPedInAnyVehicle(PlayerPedId(), false) and IsPauseMenuActive() then
+            SendNUIMessage({action = "outVeh"})
+        else
+            SendNUIMessage({action = "InVeh"})
+        end
         Wait(_s)
     end
 end)
@@ -37,6 +43,7 @@ end
 
 RegisterCommand('__colocarcinto', function()
     if IsPedInAnyVehicle(PlayerPedId()) then
+            cinto = false
         if cinto then
             SendNUIMessage({ action = "cintofalse" })
             cinto = false
